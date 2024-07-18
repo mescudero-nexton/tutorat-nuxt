@@ -4,14 +4,20 @@
       <p class="font-bold text-2xl">
         My App
       </p>
-      <ul class="flex items-center gap-x-4">
-        <li class="hover:scale-110 transition">
-          <a href="">Home</a>
-        </li>
-        <li class="hover:scale-110 transition">
-          <a href="">About Me</a>
-        </li>
-      </ul>
+      <nav>
+        <ul class="flex items-center gap-x-4">
+          <li class="hover:scale-110 transition">
+            <NuxtLink to="/">
+              Home
+            </NuxtLink>
+          </li>
+          <li class="hover:scale-110 transition">
+            <NuxtLink to="/about-me">
+              About Me
+            </NuxtLink>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <main class="container mt-16 py-6 min-h-[calc(100vh_-_120px)]">
